@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+	font-family: 'logoType';
+	src: url(../font/ロゴたいぷゴシック.OTF);
+}
+
 /*h1~h6見出し用CSS*/
 
 h1 {
@@ -7,6 +12,7 @@ h1 {
 	padding: 0.3em 0.3em 0.3em 0.8em;
 	color: #ffffff;
 	background: #0d47a1;
+    font-family: logoType;
 	-webkit-box-shadow: 0 1px 1px 0 inset rgba(0, 0, 0, 0.6);
 	        box-shadow: 0 1px 1px 0 inset rgba(0, 0, 0, 0.6);
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);

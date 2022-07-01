@@ -43,30 +43,44 @@ h1::after {
 
 
 h2 {
-	font-family: logoType;
 	position: relative;
-	padding: 0.3em 0.3em 0.3em 0.8em;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #ec407a;
+	padding: .1em .3em .1em 1em;
+	border: 1px solid #00BCD4;
 }
-h2::before,
 h2::after {
 	position: absolute;
-	width: 10px;
-	height: 20px;
+	top: .5em;
+	left: .5em;
 	content: '';
-	border-width: 1px 0 0 1px;
-	border-style: solid;
-	border-color: #ec407a;
+	width: 6px;
+	height: -webkit-calc(100% - 1em);
+	height: calc(100% - 1em);
+	background-color: #00BCD4;
+	border-radius: 4px;
 }
-h2::before {
-	top: 3px;
-	left: 3px;
+
+
+h3 {
+	position: relative;
+	padding: .1em .3em .1em 1.3em;
+	border-bottom: 1px solid #00838F;
 }
-h2::after {
-	right: 3px;
-	bottom: 3px;
-	-webkit-transform: scale(-1,-1);
-	        transform: scale(-1,-1);
+h3::before,h3::after {
+	position: absolute;
+	content: '';
+	border-radius: 100%
+}
+h3::before {
+	top: .5em;
+	left: .2em;
+	width: 18px;
+	height: 18px;
+	background: rgba(0,131,143,.7);
+}
+h3::after {
+	top: .8em;
+	left: .5em;
+	width: 13px;
+	height: 13px;
+	background: rgba(0,131,143,.5);
 }

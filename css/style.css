@@ -1,1 +1,33 @@
 @charset "utf-8";
+
+/*h1~h6見出し用CSS*/
+
+h1 {
+	position: relative;
+	padding: 0.3em 0.3em 0.3em 0.8em;
+	color: #ffffff;
+	background: #0d47a1;
+	-webkit-box-shadow: 0 1px 1px 0 inset rgba(0, 0, 0, 0.6);
+	        box-shadow: 0 1px 1px 0 inset rgba(0, 0, 0, 0.6);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+h1::before,
+h1::after {
+	position: absolute;
+	width: 0;
+	height: 51.95px;
+	content: '';
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	border-width: 0 0 0 4px;
+	border-style: double;
+	border-color: #4dd0e1;
+}
+h1::before {
+	right: 10px;
+	bottom: -15px;
+}
+h1::after {
+	top: -15px;
+	left: 10px;
+}

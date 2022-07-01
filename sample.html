@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--prefixはOGPを設定するための宣言-->
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--ページアイコンの設定-->
+    <link rel="icon" href="favicon.ico">
+
+    <!--OGPの設定-->
+
+    <!--このページのURL-->
+    <meta property="og:url" content=" ページの URL" />
+
+    <!--トップページwebsiteそれ以外article-->
+    <meta property="og:type" content=" website" />
+
+    <!--ページのtitleを指定します。一般的にはサイトの~と同じ内容を設定しますが、サイト名などのブランド情報を含まないtitleを20文字以内で設定することが好ましいとされています。-->
+    <meta property="og:title" content=" ページの タイトル" />
+
+    <!--ページの説明文を指定します。と同様の内容で記述することが多いですが、「og:description」での文字数は80~90文字が最適とされています。の文字数は120文字程度なので、内容をそのままを設定してしまうと表示された際に文字が切れてしまう可能性があるため、OGP用に文章を簡略化するとシェアされた際にユーザーに伝わりやすくなります。-->
+    <meta property="og:description" content=" ページのディスクリプション" />
+
+    <!--ページのサイト名を記述します。サイト名やブランド情報は「og:title」ではなく、この「og:site_neme」に設定します。-->
+    <meta property="og:site_name" content="サイト名" />
+
+    <!--SNS上でシェアされた際に表示させたい画像を絶対パスで指定します。Facebookでは画像サイズを1200×630p、比率で「1.91：1」を推奨しています。-->
+    <meta property="og:image" content=" サムネイル画像の URL" />
+
+    <!--twitterでの表示を指定(変更しなくてOK)-->
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!--ページのタイトル-->
+    <title>ホーム</title>
+
+    <!--スタイルシート読み込み-->
+    <link rel="stylesheet" href="../style.css">
+
+    <!--jQuery読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>h1見出しテキスト</h1>
+
+    <!--javascriptのロード呼び出し記述-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="load.js"></script>
+</body>
+
+</html>

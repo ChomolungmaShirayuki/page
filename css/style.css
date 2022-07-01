@@ -156,3 +156,26 @@ h5::after {
 p {
 	font-size: 18px;
 }
+
+
+
+ul.cp_list {
+	padding:0.5em;
+	list-style-type:none;
+}
+ul.cp_list li {
+	position:relative;
+	padding: 0em 0.3em 0.3em 1.3em;
+}
+ul.cp_list li::before {
+	position: absolute;
+	content: '';
+	display: block;
+	top: 0.5em;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	border-right: 3px solid #00BCD4;
+	border-bottom: 3px solid #00BCD4;
+	transform: rotate(-45deg);
+}

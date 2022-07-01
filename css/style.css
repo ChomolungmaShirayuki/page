@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+/*フォント指定*/
 @font-face {
 	font-family: 'logoType';
 	src: url(../font/ロゴたいぷゴシック.otf);

@@ -39,3 +39,33 @@ h1::after {
 	top: -15px;
 	left: 10px;
 }
+
+
+
+h2 {
+	position: relative;
+	padding: 0.3em 0.3em 0.3em 0.8em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ec407a;
+}
+h2::before,
+h2::after {
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	content: '';
+	border-width: 1px 0 0 1px;
+	border-style: solid;
+	border-color: #ec407a;
+}
+h2::before {
+	top: 3px;
+	left: 3px;
+}
+h2::after {
+	right: 3px;
+	bottom: 3px;
+	-webkit-transform: scale(-1,-1);
+	        transform: scale(-1,-1);
+}

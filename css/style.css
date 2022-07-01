@@ -125,3 +125,24 @@ h4:after {
 	left: 2px;
 	transform: rotate(-90deg);
 }
+
+
+h5 {
+	position: relative;
+	padding: .1em .3em .1em 1.3em;
+}
+h5::before,h5::after {
+	position: absolute;
+	content: "□";
+	width:4px;
+	height: 4px;
+	color: #FBC02D;
+}
+h5::before {
+	left:0;
+	top:0;
+}
+h5::after {
+	left: 5.5px;
+	top: 7.5px;
+}

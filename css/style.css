@@ -181,7 +181,7 @@ ul.cp_list li::before {
 }
 
 
-abutton1 {
+a button1 {
 	display: block;
 	position: relative;
 	width: 160px;
@@ -194,7 +194,7 @@ abutton1 {
 	overflow: hidden;
 	z-index: 1 !important;
 }
-abutton1:after {
+a button1:after {
 	content:"";
 	position: absolute;
 	top: 50%;
@@ -207,14 +207,31 @@ abutton1:after {
 	transition: 0.3s;
 	z-index: -1;
 }
-abutton1:hover {
+a button1:hover {
 	color: #da3c41;
 }
-abutton1:hover:after {
+a button1:hover:after {
 	height: 250%;
 	opacity: 1;
 }
-abutton1:active:after {
+a button1:active:after {
 	height: 350%;
 	opacity: 1;
+}
+
+
+a button2 {
+	display: block;
+	width: 160px;
+	padding: 0.8em;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 3px;
+	transition: .4s;
+}
+a button2:hover {
+	background: #EC407A;
+	color: #fff;
 }

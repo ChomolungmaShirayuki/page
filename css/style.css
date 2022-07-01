@@ -47,6 +47,7 @@ h1::after {
 
 
 h2 {
+	font-size: 28px;
 	font-family: logoType;
 	position: relative;
 	padding: .1em .3em .1em 1em;
@@ -67,6 +68,7 @@ h2::after {
 
 
 h3 {
+	font-size: 24px;
 	font-family: logoType;
 	position: relative;
 	padding: .1em .3em .1em 1.3em;

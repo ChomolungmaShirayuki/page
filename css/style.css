@@ -7,9 +7,9 @@
 	src: url(../font/ロゴたいぷゴシック.otf);
 }
 
-/*h1~h6見出し用CSS*/
+/*.h1~h6見出し用CSS*/
 
-h1 {
+.h1 {
 	position: relative;
 	font-size: 30px;
 	padding: 0.3em 0.3em 0.3em 0.8em;
@@ -21,8 +21,8 @@ h1 {
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-h1::before,
-h1::after {
+.h1::before,
+.h1::after {
 	position: absolute;
 	width: 0;
 	height: 51.95px;
@@ -34,19 +34,19 @@ h1::after {
 	border-color: #4dd0e1;
 }
 
-h1::before {
+.h1::before {
 	right: 10px;
 	bottom: -15px;
 }
 
-h1::after {
+.h1::after {
 	top: -15px;
 	left: 10px;
 }
 
 
 
-h2 {
+.h2 {
 	font-size: 28px;
 	font-family: logoType;
 	position: relative;
@@ -54,7 +54,7 @@ h2 {
 	border: 1px solid #00BCD4;
 }
 
-h2::after {
+.h2::after {
 	position: absolute;
 	top: .5em;
 	left: .5em;
@@ -67,7 +67,7 @@ h2::after {
 }
 
 
-h3 {
+.h3 {
 	font-size: 24px;
 	font-family: logoType;
 	position: relative;
@@ -75,14 +75,14 @@ h3 {
 	border-bottom: 1px solid #00838F;
 }
 
-h3::before,
-h3::after {
+.h3::before,
+.h3::after {
 	position: absolute;
 	content: '';
 	border-radius: 100%
 }
 
-h3::before {
+.h3::before {
 	top: .5em;
 	left: .2em;
 	width: 18px;
@@ -90,7 +90,7 @@ h3::before {
 	background: rgba(0, 131, 143, .7);
 }
 
-h3::after {
+.h3::after {
 	top: .8em;
 	left: .5em;
 	width: 13px;
@@ -99,14 +99,14 @@ h3::after {
 }
 
 
-h4 {
+.h4 {
 	font-size: 24px;
 	font-family: logoType;
 	position: relative;
 	padding: .1em .3em .1em 1em;
 }
 
-h4:before {
+.h4:before {
 	position: absolute;
 	content: '';
 	height: 15px;
@@ -118,7 +118,7 @@ h4:before {
 	transform: rotate(-50deg);
 }
 
-h4:after {
+.h4:after {
 	position: absolute;
 	content: '';
 	height: 13px;
@@ -131,15 +131,15 @@ h4:after {
 }
 
 
-h5 {
+.h5 {
 	font-size: 20px;
 	font-family: logoType;
 	position: relative;
 	padding: .1em .3em .1em 1.3em;
 }
 
-h5::before,
-h5::after {
+.h5::before,
+.h5::after {
 	position: absolute;
 	content: "□";
 	width: 4px;
@@ -147,12 +147,12 @@ h5::after {
 	color: #FBC02D;
 }
 
-h5::before {
+.h5::before {
 	left: 0;
 	top: 0;
 }
 
-h5::after {
+.h5::after {
 	left: 5.5px;
 	top: 7.5px;
 }

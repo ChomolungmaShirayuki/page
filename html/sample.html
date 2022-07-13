@@ -50,8 +50,12 @@
 <body>
 
     <script>
-        // (‘.js-rellax’);は好きなクラス名でOK!
-        var rellax = new Rellax("h1");
+        var rellax = new Rellax(".5", {
+            speed: -5,
+            center: false,
+            wrapper: null,
+            horizontal: true,
+        });
     </script>
 
     <h1 class="h1">h1見出しテキスト</h1>
@@ -77,7 +81,7 @@
 
     テキスト<a href="#" class="textlink1">リンクテキスト-link text-</a>テキスト
 
-    
+
     <div class="cp_blockdesign04">
         <div class="cp_authorname">
             <h2>Name</h2>

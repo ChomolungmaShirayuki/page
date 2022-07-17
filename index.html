@@ -39,25 +39,55 @@
     <title>ホーム</title>
 
     <!--スタイルシート読み込み-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!--jQuery読み込み(注意：jsファイルはjQuery読み込みした後に読み込む)-->
     <script src="./js/lib/jquery-3.6.0.min.js"></script>
-
-    <script src="js/rellax.min.js" defer></script>
-
+    <script src="./js/lib/rellax.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
 
     <!--タブ切り替え画面-->
 
-    
+
+    <!--
+
+    <script>var rellax = new Rellax('.rellax');</script>
+
+    <div class="rellax"><img src="./img/01.jpg" class="img"></div>
+    <div class="rellax"><img src="./img/02.jpg" class="img"></div>
+
+    <div class="rellax" data-rellax-speed="7" data-rellax-percentage="0.5" data-rellax-zindex="5">
+        I'm that default chill speed of "-2"
+    </div>
+
+    <div class="rellax"><img src="./img/01.jpg" class="img"></div>
+    <div class="rellax"><img src="./img/02.jpg" class="img"></div>
 
 
-    <!--javascriptのロード呼び出し記述-->
-    <script src="load.js"></script>
+    <p>aaaaaaaaaaaaa<br>aaaaaaaaaaaaaa</p>
+
+
+    -->
+
+    <div><img src="./img/5.png" class="img"></div>
+    <div id="luxy" class="container">
+        <div class="rellax" data-rellax-speed="20" data-rellax-zindex="1"><img src="./img/1.png" class="img"></div>
+        <div class="rellax" data-rellax-speed="6" data-rellax-zindex="2"><img src="./img/2.png" class="img"></div>
+        <div class="rellax" data-rellax-speed="3" data-rellax-zindex="3"><img src="./img/3.png" class="img"></div>
+        <div class="rellax" data-rellax-speed="1" data-rellax-zindex="4"><img src="./img/4.png" class="img"></div>
+        <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax');
+        </script>
+    </div>
+
+
+
+
+
 </body>
 
 </html>

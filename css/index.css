@@ -33,19 +33,27 @@ body {
     color: black;
     opacity: 1;
     padding: 30px;
+    z-index: 1;
     text-shadow: 0px 0px 2px white;
-    animation: SlideIn 1.6s;
+    animation: SlideIn 3s;
 }
 
 
 
-#container {
+#container01 {
+    width: 100%;
+    height: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#container02 {
     width: 100%;
     height: auto;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #top_img {
@@ -53,6 +61,7 @@ body {
     height: auto;
     z-index: -1;
     position: absolute;
+    animation: FadeIn 1s;
 }
 
 
@@ -64,6 +73,15 @@ body {
     padding: 0px;
     z-index: -1;
 }
+
+.box {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(77, 77, 113);
+    z-index: 4;
+}
+
+
 
 
 @keyframes SlideIn {
@@ -78,6 +96,15 @@ body {
     }
 }
 
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /*
 @media screen and (max-width: 550px) {

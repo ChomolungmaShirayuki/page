@@ -1,15 +1,18 @@
 @charset "utf-8";
 
 body {
-    margin: 0px;
-    padding: 0px;
-}
-
-.relax {
     width: 100%;
     height: auto;
     margin: 0px;
     padding: 0px;
+}
+
+.rellax {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .img {
@@ -22,8 +25,23 @@ body {
 
 
 .container {
+    width: 100%;
+    height: auto;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+.scr_fade_left {
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: 2s;
+}
+
+.left-show {
+    transform: translate(0, 0);
+    opacity: 1;
 }

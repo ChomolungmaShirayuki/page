@@ -7,51 +7,107 @@
 	src: url(../font/ロゴたいぷゴシック.otf);
 }
 
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*ヘッダー部分*/
+.header {
+	margin: 0px;
+	padding: 0px;
+}
+
+.headbar {
+	margin: 0px;
+	padding: 0px;
+	height: 60px;
+	width: 100%;
+	background-color: rgb(219, 217, 255);
+	opacity: 0.8;
+}
+
+
+/*メインコンテンツ部分*/
+
+.main_box {
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: no-wrap;
+}
+
+
+.main_content {
+	margin: 10px 3% 10px 7%;
+	padding: 10px;
+	width: 60%;
+	height: auto;
+}
+
+@media screen and (max-width: 480px) {
+	.main_content {
+		margin: 10px 0px 10px 0px;
+		padding: 10px;
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+.side_menu {
+	margin: 10px 7% 10px 3%;
+	padding: 10px;
+	width: 20%;
+	height: auto;
+}
+
+@media screen and (max-width: 480px) {
+	.side_menu {
+		display:none;
+	}
+}
+
+.side_menu_title_box {
+	margin: 0px;
+	padding: 8px 0px;
+	width: 100%;
+	font-size: 20px;
+	font-family: logoType;
+	height: auto;
+	text-align: center;
+	color: white;
+	background-color: #b6d4ff;
+}
+
+
 /*.h1~h6見出し用CSS*/
 
 .h1 {
+	margin: 0px 0px 20px 0px;
 	position: relative;
 	font-size: 30px;
 	padding: 0.3em 0.3em 0.3em 0.8em;
 	color: #ffffff;
-	background: #0d47a1;
+	background:linear-gradient(to right,#89b8ff, #d5ffe2);
+	/*background: #0d47a1;*/
 	font-family: logoType;
-	-webkit-box-shadow: 0 1px 1px 0 inset rgba(0, 0, 0, 0.6);
-	box-shadow: 0 1px 1px 0 inset rgba(0, 0, 0, 0.6);
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-}
-
-.h1::before,
-.h1::after {
-	position: absolute;
-	width: 0;
-	height: 51.95px;
-	content: '';
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	border-width: 0 0 0 4px;
-	border-style: double;
-	border-color: #4dd0e1;
-}
-
-.h1::before {
-	right: 10px;
-	bottom: -15px;
-}
-
-.h1::after {
-	top: -15px;
-	left: 10px;
 }
 
 
 
 .h2 {
+	margin: 0px 0px 20px 0px;
 	font-size: 28px;
 	font-family: logoType;
 	position: relative;
 	padding: .1em .3em .1em 1em;
-	border: 1px solid #00BCD4;
+	border: 1px solid #89b8ff;
 }
 
 .h2::after {
@@ -68,11 +124,12 @@
 
 
 .h3 {
+	margin: 0px 0px 20px 0px;
 	font-size: 24px;
 	font-family: logoType;
 	position: relative;
 	padding: .1em .3em .1em 1.3em;
-	border-bottom: 1px solid #00838F;
+	border-bottom: 1px solid #89b8ff;
 }
 
 .h3::before,
@@ -87,7 +144,8 @@
 	left: .2em;
 	width: 18px;
 	height: 18px;
-	background: rgba(0, 131, 143, .7);
+	background: #89b8ff;
+	opacity: 0.7;
 }
 
 .h3::after {
@@ -95,11 +153,13 @@
 	left: .5em;
 	width: 13px;
 	height: 13px;
-	background: rgba(0, 131, 143, .5);
+	background: #89b8ff;
+	opacity: 0.5;
 }
 
 
 .h4 {
+	margin: 0px 0px 20px 0px;
 	font-size: 24px;
 	font-family: logoType;
 	position: relative;
@@ -132,6 +192,7 @@
 
 
 .h5 {
+	margin: 0px 0px 20px 0px;
 	font-size: 20px;
 	font-family: logoType;
 	position: relative;
@@ -158,6 +219,7 @@
 }
 
 p {
+	margin: 0px 0px 10px 0px;
 	font-size: 18px;
 }
 

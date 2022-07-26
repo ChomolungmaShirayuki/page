@@ -1,5 +1,6 @@
+
 $('.iframe').modaal({
     type: 'iframe',
-    width: 1280,
-    height: 500
+    fullscreen: 'true',
+    overlay_opacity: '0.6'
 });

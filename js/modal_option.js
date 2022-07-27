@@ -1,4 +1,3 @@
-
 $('.iframe').modaal({
     type: 'iframe',
     fullscreen: 'true',

@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-.slide_in_left_1s {
-    animation: SlideInLeft 1s;
-}
-
-.slide_in_left_2s {
-    animation: SlideInLeft 2s;
-}
-
-.slide_in_left_5s {
-    animation: SlideInLeft 3s;
-}
-
-.fade_in_1s {
-    animation: FadeIn 1s;
-}
-
-
 @keyframes SlideInLeft {
     0% {
         opacity: 0;
